@@ -1,0 +1,7 @@
+@startuml
+class ContextStateMonitor {
+    print_diagnostics()
+        __init__()
+}
+DfDiagnosticsMonitor <|-- ContextStateMonitor
+@enduml
