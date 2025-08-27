@@ -1,4 +1,3 @@
-Para visualizar deve editar
 
 ├── ext
 │	├── isaacsim.cortex.behaviors
@@ -70,14 +69,6 @@ Para visualizar deve editar
 │   │   │           ├── obstacle_monitor_context.py
 │   │   │           ├── robot.py                        class DEX31Gripper, class EGH80Gripper, class CortexUR3e, def add_ur3e_to_stage, class CortexG1, def add_g1_to_stag 
 
-│   │   │           ├── smoothed_command.py
-│   │   │           └── tools.py
-│   │   └── PACKAGE-LICENSES
-│   │       ├── dependencies
-│   │       │   ├── isaac-sim-LICENSES.txt
-│   │       │   ├── isaac-sim-LICENSES.zip
-│   │       │   └── PIP-packages-LICENSES.txt
-│   │       └── isaacsim.cortex.framework-LICENSE.md
 │   └── isaacsim.robot_motion.motion_generation
 │       ├── isaacsim
 │       │   └── robot_motion
@@ -347,16 +338,12 @@ Para visualizar deve editar
         │   ├── follow_example_modified_main.py
         │   ├── franka_examples_main.py
         │   ├── g1_examples_main.py
-        │   ├── __pycache__
-        │   │   └── cube_manager.cpython-310.pyc
-        │   ├── ur3e_4cube_main.py
-        │   ├── ur3e_cubeboxing_main.py
+        │   ├── ur3e_4cube_main.py                empilhava 16 cubos em 4 torres
+        │   ├── ur3e_cubeboxing_main.py           parou de funcionar
         │   ├── ur3e_examples_main.py             programa adaptado para o robô ur3e.  Funcionava até que fiz alguma besteria e o isaac sim migrou seu caminho do python para a pasta .local/
-        │   └── ur3e_stacking4_main.py
-        ├── isaacsim.replicator.behavior
-        │   └── behaviors.py
-        ├── isaacsim.replicator.domain_randomization
-        │   └── randomization_demo.py
+        │   └── ur3e_stacking4_main.py            empilhava 16 cubos em 4 torres
+
+
         ├── isaacsim.robot.manipulators
         │   ├── franka
         │   │   ├── follow_target_with_ik.py
