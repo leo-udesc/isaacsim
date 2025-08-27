@@ -1,18 +1,18 @@
 ├── ext
-│   ├── isaacsim.cortex.behaviors
-│   │   └── isaacsim
-│   │       └── cortex
-│   │           └── behaviors
-│   │               ├── franka
-│   │               │   ├── block_stacking_behavior.py
-│   │               │   ├── peck_decider_network.py
-│   │               │   ├── peck_game.py
-│   │               │   ├── peck_state_machine.py
-│   │               │   ├── __pycache__
-│   │               │   │   ├── block_stacking_behavior.cpython-310.pyc
-│   │               │   │   ├── peck_decider_network.cpython-310.pyc
-│   │               │   │   ├── peck_game.cpython-310.pyc
-│   │               │   │   └── peck_state_machine.cpython-310.pyc
+│	├── isaacsim.cortex.behaviors
+│	│	└── isaacsim
+│	│ 		└── cortex
+│	│			└── behaviors
+│	│				├── franka
+│	│				│	├── block_stacking_behavior.py
+│	│ 				│	├── peck_decider_network.py
+│	│				│	├── peck_game.py
+│	│				│	├── peck_state_machine.py
+│	│				│	├── __pycache__
+│	│				│	│	├── block_stacking_behavior.cpython-310.pyc
+│	│				│	│	├── peck_decider_network.cpython-310.pyc
+│	│				│	│	├── peck_game.cpython-310.pyc
+│	│				│	│	└── peck_state_machine.cpython-310.pyc
 │   │               │   └── simple
 │   │               │       ├── __pycache__
 │   │               │       │   ├── simple_decider_network.cpython-310.pyc
@@ -224,7 +224,7 @@
 │       │   │   └── rmpflow
 │       │   │       ├── config_cortex.json
 │       │   │       ├── config.json
-│       │   │       ├── config_no_feedback.json
+│       │   │       ├── config_no_fe edback.json
 │       │   │       ├── franka_rmpflow_common.yaml
 │       │   │       └── robot_descriptor.yaml
 │       │   ├── Kawasaki
