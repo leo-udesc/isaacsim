@@ -3,22 +3,6 @@
 │	│	└── isaacsim
 │	│ 		└── cortex
 │	│			└── behaviors
-│	│				├── franka
-│	│				│	├── block_stacking_behavior.py
-│	│ 				│	├── peck_decider_network.py
-│	│				│	├── peck_game.py
-│	│				│	├── peck_state_machine.py
-│	│				│	├── __pycache__
-│	│				│	│	├── block_stacking_behavior.cpython-310.pyc
-│	│				│	│	├── peck_decider_network.cpython-310.pyc
-│	│				│	│	├── peck_game.cpython-310.pyc
-│	│				│	│	└── peck_state_machine.cpython-310.pyc
-│   │               │   └── simple
-│   │               │       ├── __pycache__
-│   │               │       │   ├── simple_decider_network.cpython-310.pyc
-│   │               │       │   └── simple_state_machine.cpython-310.pyc
-│   │               │       ├── simple_decider_network.py
-│   │               │       └── simple_state_machine.py
 │   │               ├── g1
 │   │               │   ├── block_allocation_behavior.py
 │   │               │   ├── block_stacking_behavior.py
@@ -27,21 +11,7 @@
 │   │               │   ├── peck_decider_network.py
 │   │               │   ├── peck_game.py
 │   │               │   ├── peck_state_machine.py
-│   │               │   ├── __pycache__
-│   │               │   │   ├── block_stacking_behavior.cpython-310.pyc
-│   │               │   │   ├── peck_decider_network.cpython-310.pyc
-│   │               │   │   ├── peck_game.cpython-310.pyc
-│   │               │   │   ├── peck_state_machine.cpython-310.pyc
-│   │               │   │   └── ur3e_block_stacking_behavior.cpython-310.pyc
 │   │               │   └── simple
-│   │               │       ├── __pycache__
-│   │               │       │   ├── simple_decider_network.cpython-310.pyc
-│   │               │       │   └── simple_state_machine.cpython-310.pyc
-│   │               │       ├── simple_decider_network.py
-│   │               │       └── simple_state_machine.py
-│   │               ├── __init__.py
-│   │               ├── __pycache__
-│   │               │   └── __init__.cpython-310.pyc
 │   │               ├── ur10
 │   │               │   ├── bin_stacking_behavior.py
 │   │               │   ├── __init__.py
@@ -96,23 +66,8 @@
 │   │   │           ├── math_util.py
 │   │   │           ├── motion_commander.py
 │   │   │           ├── obstacle_monitor_context.py
-│   │   │           ├── __pycache__
-│   │   │           │   ├── commander.cpython-310.pyc
-│   │   │           │   ├── cortex_object.cpython-310.pyc
-│   │   │           │   ├── cortex_rigid_prim.cpython-310.pyc
-│   │   │           │   ├── cortex_utils.cpython-310.pyc
-│   │   │           │   ├── cortex_world.cpython-310.pyc
-│   │   │           │   ├── dfb.cpython-310.pyc
-│   │   │           │   ├── df.cpython-310.pyc
-│   │   │           │   ├── __init__.cpython-310.pyc
-│   │   │           │   ├── math_util.cpython-310.pyc
-│   │   │           │   ├── motion_commander.cpython-310.pyc
-│   │   │           │   ├── obstacle_monitor_context.cpython-310.pyc
-│   │   │           │   ├── robot.cpython-310.pyc
-│   │   │           │   ├── smoothed_command.cpython-310.pyc
-│   │   │           │   └── tools.cpython-310.pyc
-│   │   │           ├── robot.py
-│   │   │           ├── robot_UML.uml
+│   │   │           ├── robot.py                        class DEX31Gripper, class EGH80Gripper, class CortexUR3e, def add_ur3e_to_stage, class CortexG1, def add_g1_to_stag 
+
 │   │   │           ├── smoothed_command.py
 │   │   │           └── tools.py
 │   │   └── PACKAGE-LICENSES
@@ -282,38 +237,6 @@
 │       │   │       ├── g1_rmpflow_common.yaml      Criado seguindo o modelo dos robôs compatíveis com o RMPflow e dados do fabricante https://support.unitree.com/home/en/G1_developer/dexterous_hand
 │       │   │       └── g1_robot_descriptor.yaml    Criado no isaacsim - Lula Robot Description Editor 
 │       │   ├── universal_robots
-│       │   │   ├── ur10
-│       │   │   │   ├── rmpflow
-│       │   │   │   │   ├── config.jsono toggle
-│       │   │   │   │   ├── config_smoothed.json
-│       │   │   │   │   ├── ur10_rmpflow_config.yaml
-│       │   │   │   │   └── ur10_robot_description.yaml
-│       │   │   │   ├── rmpflow_suction
-│       │   │   │   │   ├── config_cortex.json
-│       │   │   │   │   ├── config.json
-│       │   │   │   │   ├── ur10_rmpflow_config_cortex.yaml
-│       │   │   │   │   ├── ur10_rmpflow_config.yaml
-│       │   │   │   │   └── ur10_robot_description.yaml
-│       │   │   │   ├── ur10_robot_suction.urdf
-│       │   │   │   └── ur10_robot.urdf
-│       │   │   ├── ur10e
-│       │   │   │   ├── rmpflow
-│       │   │   │   │   ├── config.json
-│       │   │   │   │   ├── ur10e_rmpflow_config.yaml
-│       │   │   │   │   └── ur10e_robot_description.yaml
-│       │   │   │   └── ur10e.urdf
-│       │   │   ├── ur16e
-│       │   │   │   ├── rmpflow
-│       │   │   │   │   ├── config.json
-│       │   │   │   │   ├── ur16e_rmpflow_config.yaml
-│       │   │   │   │   └── ur16e_robot_description.yaml
-│       │   │   │   └── ur16e.urdf
-│       │   │   ├── ur3
-│       │   │   │   ├── rmpflow
-│       │   │   │   │   ├── config.json
-│       │   │   │   │   ├── ur3_rmpflow_config.yaml
-│       │   │   │   │   └── ur3_robot_description.yaml
-│       │   │   │   └── ur3.urdf
 │       │   │   ├── ur3e
 │       │   │   │   ├── rmpflow
 │       │   │   │   │   ├── config_cortex.json
@@ -323,18 +246,6 @@
 │       │   │   │   │   ├── ur3e_rmpflow_config.yaml
 │       │   │   │   │   └── ur3e_robot_description.yaml
 │       │   │   │   └── ur3e.urdf                            este urdf foi modificado, foi inserida a garra EGH80 da Schunk
-│       │   │   ├── ur5
-│       │   │   │   ├── rmpflow
-│       │   │   │   │   ├── config.json
-│       │   │   │   │   ├── ur5_rmpflow_config.yaml
-│       │   │   │   │   └── ur5_robot_description.yaml
-│       │   │   │   └── ur5.urdf
-│       │   │   └── ur5e
-│       │   │       ├── rmpflow
-│       │   │       │   ├── config.json
-│       │   │       │   ├── ur5e_rmpflow_config.yaml
-│       │   │       │   └── ur5e_robot_description.yaml
-│       │   │       └── ur5e.urdf
 │       │   └── ur10
 │       │       ├── README.md
 │       │       ├── rmpflow
@@ -445,21 +356,6 @@
         ├── isaacsim.replicator.domain_randomization
         │   └── randomization_demo.py
         ├── isaacsim.robot.manipulators
-        │   ├── cobotta_900
-        │   │   ├── controllers
-        │   │   │   ├── pick_place.py
-        │   │   │   └── rmpflow.py
-        │   │   ├── follow_target_example.py
-        │   │   ├── gripper_control.py
-        │   │   ├── pick_up_example.py
-        │   │   ├── rmpflow
-        │   │   │   ├── cobotta_pro_900 (copy).urdf
-        │   │   │   ├── cobotta_pro_900.urdf
-        │   │   │   ├── denso_rmpflow_common.yaml
-        │   │   │   └── robot_descriptor.yaml
-        │   │   └── tasks
-        │   │       ├── follow_target.py
-        │   │       └── pick_place.py
         │   ├── franka
         │   │   ├── follow_target_with_ik.py
         │   │   ├── follow_target_with_rmpflow.py
@@ -489,33 +385,3 @@
         │       ├── pick_place.py
         │       ├── stacking.py
         │       └── ur3e_gripper.py                                 programa adaptado com offset de 5 mm para corrigir a abertura e fechamento de 80mm para 0mm. linhas 46  e 52
-        ├── isaacsim.robot.policy.examples
-        │   ├── anymal_standalone.py
-        │   ├── h1_standalone.py
-        │   └── spot_standalone.py
-        ├── isaacsim.ros2.bridge
-        │   ├── camera_manual.py
-        │   ├── camera_periodic.py
-        │   ├── carter_multiple_robot_navigation.py
-        │   ├── carter_stereo.py
-        │   ├── clock.py
-        │   ├── moveit.py
-        │   ├── rtx_lidar.py
-        │   └── subscriber.py
-        ├── isaacsim.simulation_app
-        │   ├── change_resolution.py
-        │   ├── constant_fps.py
-        │   ├── hello_world.py
-        │   ├── livestream.py
-        │   └── load_stage.py
-        ├── isaacsim.util.clash_detection
-        │   └── carter_clash_detection.py
-        ├── isaacsim.xr.openxr
-        │   └── hand_tracking
-        │       └── hand_tracking_sample.py
-        ├── omni.isaac.dynamic_control
-        │   └── franka_articulation.py
-        ├── omni.kit.app
-        │   └── app_framework.py
-        └── omni.kit.asset_converter
-            └── asset_usd_converter.py
