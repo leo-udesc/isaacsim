@@ -1,52 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estrutura de Diretório IsaacSim</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6;
-        }
-        pre {
-            background-color: #1f2937;
-            color: #d1d5db;
-            padding: 1.5rem;
-            border-radius: 0.75rem;
-            overflow-x: auto;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-            font-size: 0.875rem;
-            line-height: 1.5rem;
-        }
-        .file-entry {
-            margin-left: 1.5rem;
-            position: relative;
-        }
-        .file-entry::before {
-            content: '';
-            position: absolute;
-            left: -1rem;
-            top: 0;
-            bottom: 0;
-            width: 1rem;
-            border-left: 1px solid #4b5563;
-        }
-        .file-entry:last-child::before {
-            height: 1rem;
-        }
-    </style>
-</head>
-<body class="p-6 md:p-12 lg:p-16">
-    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl p-8 md:p-12 lg:p-16">
-        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Estrutura de Diretórios IsaacSim</h1>
-        <p class="text-center text-gray-600 mb-8">
-            Visualização da hierarquia de pastas e arquivos.
-        </p>
-
-        <pre><code>.
+Projeto IsaacSimEste repositório contém o código e os recursos para o projeto IsaacSim. A estrutura de diretórios a seguir detalha a organização dos arquivos e módulos..
 ├── ext
 │   ├── isaacsim.cortex.behaviors
 │   │   └── isaacsim
@@ -496,79 +448,75 @@
         ├── isaacsim.robot.manipulators
         │   ├── cobotta_900
         │   │   ├── controllers
-        │   │   │   ├── pick_place.py
-        │   │   │   └── rmpflow.py
-        │   │   ├── follow_target_example.py
-        │   │   ├── gripper_control.py
-        │   │   ├── pick_up_example.py
-        │   │   ├── rmpflow
-        │   │   │   ├── cobotta_pro_900 (copy).urdf
-        │   │   │   ├── cobotta_pro_900.urdf
-        │   │   │   ├── denso_rmpflow_common.yaml
-        │   │   │   └── robot_descriptor.yaml
-        │   │   └── tasks
-        │   │       ├── follow_target.py
-        │   │       └── pick_place.py
-        │   ├── franka
-        │   │   ├── follow_target_with_ik.py
-        │   │   ├── follow_target_with_rmpflow.py
-        │   │   ├── franka_gripper.py
-        │   │   ├── multiple_tasks.py
-        │   │   ├── pick_place.py
-        │   │   └── stacking.py
-        │   ├── franka_pick_up.py
-        │   ├── rmpflow_supported_robots
-        │   │   ├── LEIAME.md
-        │   │   ├── README.md
-        │   │   └── supported_robot_follow_target_example.py
-        │   ├── universal_robots
-        │   │   ├── bin_filling.py
-        │   │   ├── follow_target_with_ik.py
-        │   │   ├── follow_target_with_rmpflow.py
-        │   │   ├── multiple_tasks.py
-        │   │   ├── pick_place2.py
-        │   │   ├── pick_place.py
-        │   │   └── stacking.py
-        │   ├── ur10_pick_up.py
-        │   └── ur3e
-        │       ├── follow_target_with_ik.py
-        │       ├── follow_target_with_rmpflow.py
-        │       ├── franka_gripper.py
-        │       ├── multiple_tasks.py
-        │       ├── pick_place.py
-        │       ├── stacking.py
-        │       └── ur3e_gripper.py
-        ├── isaacsim.robot.policy.examples
-        │   ├── anymal_standalone.py
-        │   ├── h1_standalone.py
-        │   └── spot_standalone.py
-        ├── isaacsim.ros2.bridge
-        │   ├── camera_manual.py
-        │   ├── camera_periodic.py
-        │   ├── carter_multiple_robot_navigation.py
-        │   ├── carter_stereo.py
-        │   ├── clock.py
-        │   ├── moveit.py
-        │   ├── rtx_lidar.py
-        │   └── subscriber.py
-        ├── isaacsim.simulation_app
-        │   ├── change_resolution.py
-        │   ├── constant_fps.py
-        │   ├── hello_world.py
-        │   ├── livestream.py
-        │   └── load_stage.py
-        ├── isaacsim.util.clash_detection
-        │   └── carter_clash_detection.py
-        ├── isaacsim.xr.openxr
-        │   └── hand_tracking
-        │       └── hand_tracking_sample.py
-        ├── omni.isaac.dynamic_control
-        │   └── franka_articulation.py
-        ├── omni.kit.app
-        │   └── app_framework.py
-        └── omni.kit.asset_converter
-            └── asset_usd_converter.py
-</code></pre>
-    </div>
-</body>
-</html>
+│           │   │   ├── pick_place.py
+│           │   │   └── rmpflow.py
+│           │   ├── follow_target_example.py
+│           │   ├── gripper_control.py
+│           │   ├── pick_up_example.py
+│           │   ├── rmpflow
+│           │   │   ├── cobotta_pro_900 (copy).urdf
+│           │   │   ├── cobotta_pro_900.urdf
+│           │   │   ├── denso_rmpflow_common.yaml
+│           │   │   └── robot_descriptor.yaml
+│           │   └── tasks
+│           │       ├── follow_target.py
+│           │       └── pick_place.py
+│           ├── franka
+│           │   ├── follow_target_with_ik.py
+│           │   ├── follow_target_with_rmpflow.py
+│           │   ├── franka_gripper.py
+│           │   ├── multiple_tasks.py
+│           │   ├── pick_place.py
+│           │   └── stacking.py
+│           ├── franka_pick_up.py
+│           ├── rmpflow_supported_robots
+│           │   ├── LEIAME.md
+│           │   ├── README.md
+│           │   └── supported_robot_follow_target_example.py
+│           ├── universal_robots
+│           │   ├── bin_filling.py
+│           │   ├── follow_target_with_ik.py
+│           │   ├── follow_target_with_rmpflow.py
+│           │   ├── multiple_tasks.py
+│           │   ├── pick_place2.py
+│           │   ├── pick_place.py
+│           │   └── stacking.py
+│           ├── ur10_pick_up.py
+│           └── ur3e
+│               ├── follow_target_with_ik.py
+│               ├── follow_target_with_rmpflow.py
+│               ├── franka_gripper.py
+│               ├── multiple_tasks.py
+│               ├── pick_place.py
+│               ├── stacking.py
+│               └── ur3e_gripper.py
+│           ├── isaacsim.robot.policy.examples
+│           │   ├── anymal_standalone.py
+│           │   ├── h1_standalone.py
+│           │   └── spot_standalone.py
+│           ├── isaacsim.ros2.bridge
+│           │   ├── camera_manual.py
+│           │   ├── camera_periodic.py
+│           │   ├── carter_multiple_robot_navigation.py
+│           │   ├── carter_stereo.py
+│           │   ├── clock.py
+│           │   ├── moveit.py
+│           │   ├── rtx_lidar.py
+│           │   └── subscriber.py
+│           ├── isaacsim.simulation_app
+│           │   ├── change_resolution.py
+│           │   ├── constant_fps.py
+│           │   ├── hello_world.py
+│           │   ├── livestream.py
+│           │   └── load_stage.py
+│           ├── isaacsim.util.clash_detection
+│           │   └── carter_clash_detection.py
+│           ├── isaacsim.xr.openxr
+│           │   └── hand_tracking
+│           │       └── hand_tracking_sample.py
+│           ├── omni.isaac.dynamic_control
+│           │   └── franka_articulation.py
+│           ├── omni.kit.app
+│           │   └── app_framework.py
+│           └── omni.kit.asset_converter
+│               └── asset_usd_converter.py
