@@ -284,7 +284,7 @@
 │       │   ├── universal_robots
 │       │   │   ├── ur10
 │       │   │   │   ├── rmpflow
-│       │   │   │   │   ├── config.json
+│       │   │   │   │   ├── config.jsono toggle
 │       │   │   │   │   ├── config_smoothed.json
 │       │   │   │   │   ├── ur10_rmpflow_config.yaml
 │       │   │   │   │   └── ur10_robot_description.yaml
