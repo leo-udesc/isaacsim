@@ -1,0 +1,107 @@
+@startuml
+class DfRobotApiContext {
+        robot
+    __init__()
+}
+class DfBasicContext {
+    reset()
+        __init__()
+}
+class DfDiagnosticsMonitor {
+    monitor()
+    reset()
+    monitor_index()
+    print_diagnostics()
+    time_since_start()
+    monitor()
+        diagnostics_monitor
+    index
+    print_dt
+    current_time
+    time_at_start
+    time_at_next_print
+    current_time
+    time_at_start
+    time_at_next_print
+    __init__()
+}
+class DfGoTarget {
+    __str__()
+    enter()
+    step()
+        set_target_only_on_entry
+    __init__()
+}
+class DfApproachTarget {
+    __str__()
+    decide()
+        approach_along_axis
+    direction_length
+    std_dev
+    approach_params_rel
+    __init__()
+}
+class DfApproachTargetLinearly {
+    __str__()
+    enter()
+    decide()
+        step_length
+    target_T
+    init_eff_T
+    position_offset
+    T_offset
+    step_increment
+    current_alpha
+    current_alpha
+    __init__()
+}
+class DfLift {
+    __str__()
+    enter()
+    decide()
+        height
+    axis
+    target_pq
+    __init__()
+}
+class DfMoveEndEffectorRel {
+    __str__()
+    enter()
+    decide()
+        p_local
+    target_pq
+    __init__()
+}
+class DfOpenGripper {
+    enter()
+        __init__()
+}
+class DfCloseGripper {
+    enter()
+        __init__()
+}
+class DfMoveGripper {
+    enter()
+        width
+    __init__()
+}
+class GoHomeState {
+    enter()
+    step()
+    make_go_home()
+        target_T
+    __init__()
+}
+DfLogicalState <|-- DfRobotApiContext
+DfRobotApiContext <|-- DfBasicContext
+ABC <|-- DfDiagnosticsMonitor
+DfAction <|-- DfGoTarget
+DfDecider <|-- DfApproachTarget
+DfDecider <|-- DfApproachTargetLinearly
+DfDecider <|-- DfLift
+DfDecider <|-- DfMoveEndEffectorRel
+DfAction <|-- DfOpenGripper
+DfAction <|-- DfCloseGripper
+DfAction <|-- DfMoveGripper
+DfState <|-- GoHomeState
+@enduml
